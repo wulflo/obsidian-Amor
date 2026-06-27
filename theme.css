@@ -503,7 +503,7 @@ body {
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
-    --color-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 47%));
+    --color-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 37%));
 }
 
 .theme-light {
@@ -2362,7 +2362,7 @@ body:not(.is-phone) .vertical-tab-header-group-title::before {
 }
 
 body.theme-dark:not(.is-phone) .vertical-tab-header-group-title::before {
-    filter: brightness(1.5);
+    filter: brightness(10);
 }
 
 .is-mobile .setting-item-name {
