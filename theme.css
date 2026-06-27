@@ -1085,12 +1085,6 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
     font-size: 1.1em;
 }
 
-.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
-    background: var(--background-primary);
-    padding-right: 4%;
-    padding-left: 4%;
-}
-
 /* ==========================================================================
    4. TIPOGRAFÍA Y FORMATO MARKDOWN (TYPOGRAPHY & MARKDOWN FORMATTING)
    ========================================================================== */
