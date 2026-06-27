@@ -760,6 +760,10 @@ body {
     --color-headings: hsl(350, 65%, 88%);
 }
 
+.theme-dark.is-mobile {
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 65%));
+}
+
 /* ==========================================================================
    3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
    ========================================================================== */
@@ -775,7 +779,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .nav-file-title,
 .nav-folder-title {
     color: var(--text-important);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .tree-item-inner {
@@ -821,21 +825,21 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-activ
 
 .nav-files-container .nav-folder > .tree-item-self .tree-item-icon::before {
     content: "🌸";
-    font-size: 14px;
+    font-size: 0.7em;
     line-height: 1;
     filter: brightness(0.2);
 }
 
 .nav-files-container .nav-folder.is-collapsed > .tree-item-self .tree-item-icon::before {
     content: "🌹";
-    font-size: 14px;
+    font-size: 0.93em;
     line-height: 1;
     filter: brightness(0.2);
 }
 
 .nav-files-container .nav-file > .tree-item-self:not([data-icon]) .tree-item-inner::before {
     content: "✨";
-    font-size: 13px;
+    font-size: 0.93em;
     margin-right: 6px;
     line-height: 1;
     filter: brightness(0.2);
