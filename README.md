@@ -1,6 +1,8 @@
 # Love: your heart, your color
 > A theme that speaks the language of love. Enchanting scarlets and passionate crimson shades fill your screen with vibrant feeling. </br>
 
+# How to use
+
 1. Colorful Highlights
 	1. Make your text stand out with vibrant, rich ==highlights== designed to draw your eyes instantly to key terms.
 2. Flashcard Glow Effect
