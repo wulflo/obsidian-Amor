@@ -44,6 +44,7 @@ TABLA DE CONTENIDOS (ÍNDICE)
    12. ENTRADAS, BOTONES Y FORMULARIOS (INPUTS, BUTTONS & FORMS)
    13. PLUGINS Y GRÁFICOS (PLUGINS & GRAPHS)
    14. MISCELÁNEOS Y CLASES DE APOYO (MISC & HELPERS)
+   15. VERSIÓN MÓVIL (MOBILE & PHONE)
 
 ---------------------------------------------------------------------------*/
 
@@ -760,10 +761,6 @@ body {
     --color-headings: hsl(350, 65%, 88%);
 }
 
-.theme-dark.is-mobile {
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 65%));
-}
-
 /* ==========================================================================
    3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
    ========================================================================== */
@@ -1039,27 +1036,6 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
     opacity: var(--icon-opacity);
 }
 
-.theme-dark.is-mobile .workspace-drawer-inner {
-    background: black;
-}
-
-.is-mobile .tree-item .tree-item-self {
-    border: none;
-}
-
-.is-phone .workspace-drawer-tab-options-list, .is-phone .workspace-drawer-tab-select {
-    box-shadow: none;
-    border-radius: 5px;
-    background: black;
-    border: 1px solid var(--background-secondary);
-}
-
-.theme-light.is-phone .workspace-drawer-tab-options-list, .theme-light.is-phone .workspace-drawer-tab-select {
-    box-shadow: none;
-    border-radius: 5px;
-    background: var(--background-secondary);
-}
-
 .workspace-drawer-tab-select .workspace-tab-header-inner, .workspace-drawer-tab-options .workspace-tab-header-inner, .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner {
     border-radius: 5px;
 }
@@ -1068,17 +1044,6 @@ body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
     color: var(--text-muted);
     background: var(--background-tertiary);
-}
-
-.is-phone .view-header .view-header-left .view-action {
-    border-radius: 5px;
-    background: none;
-}
-
-.is-phone .menu {
-    background: var(--background-primary);
-    font-size: 1.1em;
-    border-top: 1px solid var(--text-accent);
 }
 
 .menu-item-title {
@@ -2112,10 +2077,6 @@ body {
     background: inherit;
 }
 
-.is-phone .collage table.dataview tbody>tr>td a.external-link {
-    width: 8em;
-}
-
 /* ==========================================================================
    8. ETIQUETAS Y METADATOS (TAGS & METADATA)
    ========================================================================== */
@@ -2283,10 +2244,6 @@ input.prompt-input {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
-.theme-dark.is-mobile .prompt {
-    background: var(--background-primary);
-}
-
 .search-input-container input {
     background: var(--background-secondary);
     border: 1px solid var(--text-accent)
@@ -2330,10 +2287,6 @@ input.prompt-input {
     background: var(--background-secondary);
 }
 
-.is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-header {
-    background: var(--background-primary);
-}
-
 body:not(.is-phone) .vertical-tab-header-group-title {
     font-size: 1em;
     color: var(--text-muted);
@@ -2359,35 +2312,6 @@ body.theme-dark:not(.is-phone) .vertical-tab-header-group-title::before {
     filter: brightness(10);
 }
 
-.is-mobile .setting-item-name {
-    font-size: 1.15em;
-}
-
-.is-phone .modal.mod-lg .modal-header,
-.is-phone .modal.mod-sidebar-layout .modal-header {
-    border-bottom: none;
-    background: transparent;
-}
-
-.is-phone .modal.mod-sidebar-layout .modal-title {
-    font-size: 1.5em;
-    background: var(--background-primary);
-    padding: 4px;
-    border-radius: 10px;
-}
-
-.theme-dark.is-mobile .modal.mod-sidebar-layout .modal-title {
-    background: inherit;
-}
-
-.is-mobile .setting-group .setting-items {
-    border-radius: 8px;
-}
-
-.theme-dark.is-mobile .setting-group .setting-items {
-    background: inherit;
-}
-
 .setting-item {
     border: none;
 }
@@ -2407,14 +2331,6 @@ body.theme-dark:not(.is-phone) .vertical-tab-header-group-title::before {
 .community-item {
     border: none;
     background: var(--background-tertiary);
-}
-
-.is-phone .mod-community-theme .community-item {
-    background: var(--background-primary);
-}
-
-.is-phone .community-modal-controls {
-    background: var(--background-primary);
 }
 
 .community-item.is-selected,
@@ -2465,10 +2381,6 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 
 .graph-controls .mod-cta {
     border: 2px solid var(--text-accent)
-}
-
-.is-phone .modal.mod-sidebar-layout .modal-title {
-    background: inherit;
 }
 
 /* ==========================================================================
@@ -2527,14 +2439,6 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 button.mod-cta {
     background: var(--background-button);
     color: var(--text-muted);
-}
-
-body.emulate-mobile button {
-    color: var(--background-primary);
-}
-
-.theme-dark.is-mobile button {
-    color: white;
 }
 
 .input-right-decorator.clickable-icon {
@@ -2749,11 +2653,6 @@ g>g>path {
     margin-bottom: 5px
 }
 
-.is-mobile .empty-state-action {
-    background: inherit;
-    color: var(--text-muted)
-}
-
 .editingToolbarDefaultAesthetic {
     background: transparent;
 }
@@ -2784,7 +2683,7 @@ svg.svg-icon {
     color: var(--icon-color);
 }
 
-.is-mobile svg.svg-icon {
-    background: transparent;
-    border-radius: 4px;
-}
+
+/* ==========================================================================
+   15. VERSIÓN MÓVIL (MOBILE & PHONE)
+   ========================================================================== */
