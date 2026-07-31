@@ -463,7 +463,7 @@ body {
     --accent-l: 65%;
     --background-primary: hsl(355, 15%, 13%);
     --background-primary-alt: hsl(355, 18%, 10%);
-    --background-secondary: hsl(352, 20%, 8%);
+    --background-secondary: hsl(352, 20%, 20%);
     --background-secondary-alt: hsl(354, 15%, 11%);
     --background-tertiary: hsl(350, 12%, 15%);
     --background-button: hsl(355, 30%, 22%);
@@ -717,7 +717,7 @@ body {
     --accent-l: 70%;
     --background-primary: hsl(0, 100%, 98%);
     --background-primary-alt: hsl(355, 100%, 97%);
-    --background-secondary: hsl(352, 60%, 92%);
+    --background-secondary: hsl(352, 60%, 75%);
     --background-secondary-alt: hsl(354, 50%, 86%);
     --background-tertiary: hsl(350, 45%, 87%);
     --background-table: hsl(355, 80%, 95%);
@@ -776,7 +776,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .nav-file-title,
 .nav-folder-title {
     color: var(--text-important);
-    font-size: 0.9em;
+    font-size: 0.87em;
 }
 
 .tree-item-inner {
